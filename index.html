@@ -108,6 +108,7 @@
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
+            instance = unityInstance;
           };
         }).catch((message) => {
           alert(message);
